@@ -1,4 +1,49 @@
-# Welcome to your Expo app 👋
+# Plaza Mayoreo — aplicación móvil
+
+Aplicación universal en Expo/React Native conectada al backend Laravel de Plaza Mayoreo Circunvalación.
+
+## Áreas disponibles
+
+- Catálogo público sin inicio de sesión: portada, búsqueda, tarjetas y detalle de producto.
+- Contacto con el vendedor mediante WhatsApp.
+- Administración autenticada mediante Laravel Sanctum.
+- Consulta y alta de productos.
+- Consulta de categorías.
+- Base preparada para vendedores, inventarios, banners, ofertas y configuración.
+
+## Configuración local
+
+1. Copia `.env.example` como `.env`.
+2. En navegador o simulador iOS puedes usar `http://127.0.0.1:8000/api/v1`.
+3. En el emulador Android usa `http://10.0.2.2:8000/api/v1`.
+4. En un teléfono físico usa la IP local de la computadora, por ejemplo `http://192.168.1.20:8000/api/v1`, y levanta Laravel escuchando en la red local.
+
+Variables:
+
+```env
+EXPO_PUBLIC_API_URL=http://127.0.0.1:8000/api/v1
+EXPO_PUBLIC_WHATSAPP_NUMBER=525510003000
+```
+
+## Ejecución
+
+Primero inicia Laravel. Después, desde esta carpeta:
+
+```bash
+npm install
+npm start
+```
+
+En la consola de Expo presiona `w` para navegador o escanea el código QR con Expo Go.
+
+## Validación
+
+```bash
+npx tsc --noEmit
+npm run lint
+```
+
+## Referencia del proyecto Expo
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
